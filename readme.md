@@ -37,11 +37,11 @@ tongue out
 
 Original image:
 
-![Tongue image](images/tongue.jpg)
+![Tongue image](tongue.jpg)
 
 LIME explanation:
 
-![Tongue analysis](results/tongue_analysis.png)
+![Tongue analysis](tongue_analysis.png)
 
 
 ## Contributing
