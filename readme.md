@@ -52,11 +52,11 @@ By combining **powerful transformers** with **human-centric interpretability**, 
 
 ## 🖼️ Tested Expressions
 
-| Expression     | Input Image        | LIME Visualization         |
-|----------------|--------------------|-----------------------------|
-| 😄 Happy        | `happy.jpg`        | `happy_analysis.png`       |
-| 😠 Angry        | `angry.jpg`        | `angry_analysis.png`       |
-| 😝 Tongue Out   | `tongue.jpg`       | `tongue_analysis.png`      |
+| Expression     | Input Image        | 
+|----------------|--------------------|
+| 😄 Happy        | ![Tongue](happy.jpg)        | 
+| 😠 Angry        | ![Tongue](angry.jpg)        | 
+| 😝 Tongue Out   | ![Tongue](tongue.jpg)      | 
 
 Example:
 
