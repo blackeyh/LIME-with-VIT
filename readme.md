@@ -1,47 +1,69 @@
-# Lime with Vision in transformers (VIT)
+# 🧠🔍 LIME x Vision Transformer (ViT): Interpreting Emotions from Images
 
-This project explores the integration of VIT with Lime, an interpretability tool that works with machine and deep learning. The goal is to visualize what area of the image were most important for the model to make it's prediction thus understanding more. enhancing trust in AI models.
+> Understand your model, not just its predictions.  
+> This project combines **LIME** and **Vision Transformers** to open the black box of emotion recognition in images.
 
-# Project Overview
+---
 
--  **Goal**: Visualize why the model predicted a specific emotion for an input image.
--  **Model**: Fine-tuned Vision Transformer (`dima806/facial_emotions_image_detection` from Hugging Face).
--  **Tech Stack**: PyTorch, Hugging Face Transformers, LIME, PIL, matplotlib.
+## 🎯 Project Objective
 
-# Files Structure
-`limetesting.py`: main code to use LIME with VIT
-`model/`: The fine-tuned ViT model (not included in the repo due to size — add your own model/).
-`requirements.txt`: Python dependencies.
+In an age where AI powers decision-making, **interpretability matters**. This project uses **LIME (Local Interpretable Model-agnostic Explanations)** to reveal which parts of an image influenced the predictions of a **Vision Transformer (ViT)** model fine-tuned for **facial emotion detection**.
 
-there are 3 images that were used to test the code and three images with the result of the test 
+By combining **powerful transformers** with **human-centric interpretability**, we aim to:
+- 📸 Understand **why** the model predicted a specific emotion.
+- ✅ Build **trust** and **transparency** in AI.
+- 🧪 Explore LIME’s capabilities with modern vision models.
 
-facial expressions tested: 
-happy
-angry
-tongue out
+---
+
+## 🧠 Model
+
+- **Model Used**: [`dima806/facial_emotions_image_detection`](https://huggingface.co/dima806/facial_emotions_image_detection) (fine-tuned ViT)
+- **Architecture**: Vision Transformer (ViT)
+- **Purpose**: Classify facial emotions from static images
+
+---
+
+## 🧰 Tech Stack
+
+- 🧱 PyTorch
+- 🤗 Hugging Face Transformers
+- 🧠 LIME (for local interpretability)
+- 🖼️ PIL & matplotlib (image processing and visualization)
+
+---
+
+## 📂 File Structure
+
+ model/
+🔹 (Your fine-tuned ViT model — not included here)
+📄 limetesting.py
+📄 requirements.txt
+📄 README.md
+📸 happy.jpg, angry.jpg, tongue.jpg
+🖼️ happy_analysis.png, angry_analysis.png, tongue_analysis.png
 
 
-##  How to Run
+- `limetesting.py`: Core script to apply LIME on ViT predictions.
+- `model/`: Add your custom or pre-trained ViT model here.
+- `requirements.txt`: Lists Python dependencies.
 
-1. Clone the repository.
-2. Install dependencies:
+---
 
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. change the model to your model and change the class names (the performance of LIME heavily depends on your model performance)
+## 🖼️ Tested Expressions
 
-4. run the code and enter the path of the image you will test on
+| Expression     | Input Image        | LIME Visualization         |
+|----------------|--------------------|-----------------------------|
+| 😄 Happy        | `happy.jpg`        | `happy_analysis.png`       |
+| 😠 Angry        | `angry.jpg`        | `angry_analysis.png`       |
+| 😝 Tongue Out   | `tongue.jpg`       | `tongue_analysis.png`      |
 
-## Example Output
+Example:
 
-Original image:
+Original Image | LIME Explanation  
+:-------------------------:|:-------------------------:  
+![Tongue](tongue.jpg) | ![Tongue Analysis](tongue_analysis.png)
 
-![Tongue image](tongue.jpg)
-
-LIME explanation:
-
-![Tongue analysis](tongue_analysis.png)
 
 
 ## Contributing
