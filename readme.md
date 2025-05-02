@@ -9,8 +9,8 @@ This project explores the integration of VIT with Lime, an interpretability tool
 -  **Tech Stack**: PyTorch, Hugging Face Transformers, LIME, PIL, matplotlib.
 
 # Files Structure
-`imetesting.py`: main code to use LIME with VIT
-`facial_expression_VIT model/`: The fine-tuned ViT model (not included in the repo due to size — add your own).
+`limetesting.py`: main code to use LIME with VIT
+`model/`: The fine-tuned ViT model (not included in the repo due to size — add your own model/).
 `requirements.txt`: Python dependencies.
 
 there are 3 images that were used to test the code and three images with the result of the test 
